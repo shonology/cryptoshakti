@@ -69,7 +69,7 @@ export class DashboardComponent implements OnInit {
     const app = initializeApp(this.firebaseConfig);
     const db = getDatabase(app);
 
-    const userId = 'user-123'; // Replace with actual user ID or session ID.
+    const userId = ''; // Replace with actual user ID or session ID.
 
     // Fetch selected plan from Firebase.
     const selectedPlanRef = ref(db, `users/${userId}/selectedPlan`);
