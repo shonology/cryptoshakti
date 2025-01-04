@@ -1,0 +1,104 @@
+.content-section {
+    padding: 40px;
+    background-color: #16213e;
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #31c48d;
+    text-align: center; /* Centered heading */
+}
+
+.dashboard-item {
+    background-color: #0f3460;
+    padding: 25px;
+    border-radius: 12px; /* Softer corners for a modern look */
+    margin-bottom: 30px; /* Extra spacing between items */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Slightly larger shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation on hover */
+}
+
+.dashboard-item:hover {
+    transform: translateY(-5px); /* Hover effect for interactivity */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.dashboard-item h3 {
+    color: #31c48d;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 600; /* Stronger heading for better readability */
+}
+
+.dashboard-item p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    line-height: 1.6; /* Improved line spacing for readability */
+    color: #e8f5e9; /* Lighter text color for better contrast */
+}
+
+.dashboard-item p strong {
+    font-weight: 700; /* Bold for key data */
+    color: #31c48d; /* Green to highlight important data */
+}
+
+.dashboard-item .investor-detail {
+    margin-bottom: 20px;
+}
+
+.dashboard-item .investor-detail p {
+    font-size: 1.1rem;
+}
+
+.dashboard-item .plan-detail p {
+    font-size: 1.1rem;
+}
+
+.dashboard-item .blockchain-investment {
+    font-style: italic;
+    color: #b3e5fc; /* Light blue for distinction */
+}
+
+.dashboard-item .hr-divider {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #31c48d; /* Green divider line */
+}
+
+
+button {
+    padding: 12px 30px;
+    background-color: #31c48d; /* Green color for action */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+/* Hover and Focus Effects for Button */
+button:hover {
+    background-color: #23a86d; /* Darker green */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Light shadow on hover */
+}
+
+/* Active Button Effect */
+button:active {
+    transform: translateY(2px); /* Slight down movement on click */
+}
+
+/* Focus Effect for Accessibility */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(50, 201, 129, 0.8); /* Soft green glow */
+}
+

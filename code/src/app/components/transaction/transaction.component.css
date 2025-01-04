@@ -1,0 +1,75 @@
+/* General Styles */
+.content-section {
+    padding: 50px;
+    background-color: #16213e;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.content-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #31c48d;
+    font-weight: 700;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Transaction Details Styling */
+.transaction-details {
+    background-color: #0f3460;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.transaction-details p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    background-color: #31c48d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover and Focus Effects for Button */
+button:hover {
+    background-color: #23a86d;
+    transform: translateY(-3px);
+}
+
+/* Spacing Between Buttons */
+button + button {
+    margin-top: 55px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

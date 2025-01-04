@@ -1,0 +1,24 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(135deg, #0f3460, #16213e);
+    animation: heroBounce 2s infinite;
+}
+
+@keyframes heroBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero h2 {
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+}

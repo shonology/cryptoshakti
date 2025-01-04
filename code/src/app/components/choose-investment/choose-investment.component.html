@@ -1,0 +1,19 @@
+<div class="content-section">
+  <h2>Choose an Investment Plan</h2>
+  <ul>
+    <li *ngFor="let plan of investmentPlans" class="investment-item">
+      <h3>{{ plan.name }}</h3>
+      <p><strong>Description:</strong> {{ plan.description }}</p>
+      <p><strong>Return Percentage:</strong> {{ plan.returnPercentage }}%</p>
+      <button (click)="selectPlan(plan)">Select</button>
+    </li>
+  </ul>
+
+  <div *ngIf="selectedPlan" class="selected-plan">
+    <h3>Selected Plan</h3>
+    <p><strong>Name:</strong> {{ selectedPlan.name }}</p>
+    <p><strong>Description:</strong> {{ selectedPlan.description }}</p>
+    <p><strong>Return Percentage:</strong> {{ selectedPlan.returnPercentage }}%</p>
+    <button (click)="saveAndProceed()">Save & Proceed</button>
+  </div>
+</div>

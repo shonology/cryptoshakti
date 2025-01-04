@@ -1,0 +1,12 @@
+<section class="content-section">
+  <h2>Transaction Details</h2>
+  
+  <div class="transaction-details">
+    <p><strong>Transaction ID:</strong> {{ transactionId }}</p>
+    <p><strong>Status:</strong> Successful</p>
+    <p><strong>Date:</strong> {{ transactionDate }}</p>
+  </div>
+  
+  <button class="btn" (click)="printReport()">Print</button>
+  <button onclick="window.location.href='/dashboard'">Dashboard</button>
+</section>

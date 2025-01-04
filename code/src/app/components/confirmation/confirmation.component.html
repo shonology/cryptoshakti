@@ -1,0 +1,23 @@
+<div class="content-section">
+  <h2>Investment Confirmation</h2>
+
+  <!-- Selected Plan Details -->
+  <div *ngIf="selectedPlan" class="confirmation-details">
+    <h3>Selected Investment Plan:</h3>
+    <p><strong>Name:</strong> {{ selectedPlan.name }}</p>
+    <p><strong>Description:</strong> {{ selectedPlan.description }}</p>
+    <p><strong>Return Percentage:</strong> {{ selectedPlan.returnPercentage }}%</p>
+  </div>
+
+  <!-- Investor Details -->
+  <div *ngIf="investor" class="confirmation-details">
+    <h3>Investor Details:</h3>
+    <p><strong>Name:</strong> {{ investor.name }}</p>
+    <p><strong>Interest Rate:</strong> {{ investor.interestRate }}%</p>
+    <p><strong>Amount:</strong> ETH {{ investor.amount }}</p>
+    
+  </div>
+
+  <!-- Pay Button -->
+  <button onclick="window.location.href='/payment'">Pay</button>
+</div>

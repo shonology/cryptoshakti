@@ -1,0 +1,85 @@
+/* General Styles */
+.content-section {
+    padding: 50px;
+    background-color: #16213e;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    border-radius: 10px; /* Rounded corners for container */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Heading */
+.content-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #31c48d;
+    font-weight: 700;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Confirmation Details Sections */
+.confirmation-details {
+    background-color: #0f3460;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    animation: fadeIn 1.2s ease-out;
+}
+
+/* Plan Section Styling */
+.confirmation-details h3 {
+    font-size: 1.5rem;
+    color: #31c48d;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Text Paragraphs in Confirmation Details */
+.confirmation-details p {
+    margin: 12px 0;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+/* Emphasize Strong Text */
+.confirmation-details strong {
+    color: #31c48d;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 30px;
+    background-color: #31c48d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #23a86d;
+    transform: translateY(-3px); /* Slight animation effect */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

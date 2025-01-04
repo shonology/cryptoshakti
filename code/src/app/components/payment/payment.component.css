@@ -1,0 +1,100 @@
+/* General Styles */
+.content-section {
+    padding: 50px;
+    background-color: #16213e;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.content-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #31c48d;
+    font-weight: 700;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Paragraph Styles */
+.content-section p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Label and Input Field Styling */
+label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+    color: #fff;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #31c48d;
+    border-radius: 8px;
+    background-color: #0f3460;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus effect for input */
+input[type="number"]:focus {
+    border-color: #23a86d;
+    background-color: #1a4567;
+}
+
+/* Validation Error Styling */
+p.error-message {
+    color: #ff4d4d;
+    font-size: 1rem;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 30px;
+    background-color: #31c48d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover and Focus Effects for Button */
+button:hover {
+    background-color: #23a86d;
+    transform: translateY(-3px);
+}
+
+/* Button for Payment and Details */
+button:focus {
+    outline: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

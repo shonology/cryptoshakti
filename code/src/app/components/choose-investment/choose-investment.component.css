@@ -1,0 +1,112 @@
+/* General Styles */
+.content-section {
+    background-color: #1e2a47; /* Dark background for professionalism */
+    color: #fff;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean font */
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Heading */
+.content-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #31c48d;
+    font-weight: 600;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Investment Plan List */
+ul {
+    list-style-type: none;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 50px;
+    justify-items: center;
+}
+
+/* Individual Plan Card */
+.investment-item {
+    background-color: #2e3a59; /* Darker background for each plan */
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    backdrop-filter: blur(5px); /* Slight glass effect */
+}
+
+/* Hover Effect for Plan */
+.investment-item:hover {
+    transform: translateY(-8px);
+    background-color: #1f4c74; /* Lighter background on hover */
+}
+
+/* Plan Title */
+.investment-item h3 {
+    font-size: 1.8rem;
+    color: #31c48d;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Plan Description */
+.investment-item p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #f0f0f0; /* Light text for description */
+}
+
+/* Button Styling */
+button {
+    padding: 12px 30px;
+    background-color: #31c48d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #23a86d;
+    transform: translateY(-3px); /* Button slight hover animation */
+}
+
+/* Selected Plan Section */
+.selected-plan {
+    background-color: #2e3a59;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+.selected-plan h3 {
+    font-size: 1.8rem;
+    color: #31c48d;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

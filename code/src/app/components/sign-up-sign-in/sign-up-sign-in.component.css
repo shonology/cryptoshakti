@@ -1,0 +1,136 @@
+/* Sign-Up/Sign-In Container */
+.sign-up-sign-in {
+    padding: 40px;
+    background-color: rgba(22, 33, 62, 0.9); /* Darker background */
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    backdrop-filter: blur(15px); /* Stronger blur effect for glassy look */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    position: relative;
+}
+
+/* Header */
+.sign-up-sign-in h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #31c48d;
+    font-family: 'Roboto', sans-serif; /* Smooth, modern font */
+    letter-spacing: 2px; /* Letter spacing for a clean look */
+    animation: fadeIn 1s ease-out; /* Animation on page load */
+}
+
+/* Form */
+form {
+    display: inline-block;
+    text-align: left;
+    max-width: 300px;
+    width: 100%;
+    animation: slideIn 0.5s ease-out; /* Animation for the form */
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    color: #31c48d;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Input Fields (Glassy Effect) */
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(49, 196, 141, 0.6); /* Semi-transparent border */
+    border-radius: 10px;
+    background-color: rgba(15, 52, 96, 0.8); /* Semi-transparent dark background */
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px); /* Glass effect for input field */
+}
+
+/* Input Fields on Focus */
+input:focus {
+    border-color: #23a86d;
+    background-color: rgba(22, 33, 62, 0.8);
+    outline: none;
+    box-shadow: 0 0 5px rgba(35, 168, 109, 0.8);
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    background-color: #31c48d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    background-color: #23a86d;
+    transform: translateY(-3px); /* Button hover animation */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(1px); /* Button click effect */
+}
+
+/* Glassy Text Effect */
+.glassy-text {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.glassy-text::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    transition: background 0.3s ease-in-out;
+}
+
+.glassy-text:hover::after {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

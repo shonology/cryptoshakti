@@ -1,0 +1,12 @@
+<div class="connect-wallet">
+    <h2>Connect Your Crypto Wallet</h2>
+    <button (click)="connectWallet()">Connect Wallet</button>
+    
+    <!-- Show wallet address after connecting -->
+    <div *ngIf="account">
+        <h3>Connected Wallet:</h3>
+        <p>{{ account }}</p>
+    </div>
+    
+    <button *ngIf="account" onclick="window.location.href='/choose-investment'">Proceed</button>
+</div>

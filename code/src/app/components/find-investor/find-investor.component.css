@@ -1,0 +1,118 @@
+/* General Styles */
+.content-section {
+    padding: 40px;
+    background-color: #16213e;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Heading */
+.content-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #31c48d;
+    font-weight: 700;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Investor List */
+.investor-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+    justify-items: center;
+}
+
+/* Individual Investor Item */
+.investor-item {
+    background-color: #0f3460;
+    padding: 20px;
+    border: 1px solid #31c48d;
+    border-radius: 12px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    backdrop-filter: blur(5px); /* Slight glass effect */
+}
+
+/* Hover Effects for Investor Items */
+.investor-item:hover {
+    transform: translateY(-5px);
+    background-color: #1f4c74;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Investor Name */
+.investor-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #31c48d;
+    font-weight: 600;
+}
+
+/* Investor Description */
+.investor-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    background-color: #31c48d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #23a86d;
+    transform: translateY(-3px); /* Slight animation effect */
+}
+
+/* Selected Investor Section */
+.selected-investor {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #4caf50;
+    border-radius: 12px;
+    background-color: #e8f5e9;
+    color: #16213e;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Action Buttons Styling for Selected Investor */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

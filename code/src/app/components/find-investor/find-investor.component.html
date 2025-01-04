@@ -1,0 +1,28 @@
+<div class="content-section">
+  <h2>Select an Investor</h2>
+  
+  <!-- Investor List -->
+  <ul class="investor-list">
+    <li *ngFor="let investor of investors" class="investor-item">
+      <h3>{{ investor.name }}</h3>
+      <p><strong>Interest Rate:</strong> {{ investor.interestRate }}%</p>
+      <p><strong>Amount:</strong> ETH{{ investor.amount }}</p>
+      <button (click)="onSelectInvestor(investor)" [class.selected]="investor === selectedInvestor">
+        {{ investor === selectedInvestor ? 'Selected' : 'Select' }}
+      </button>
+    </li>
+  </ul>
+
+  <!-- Selected Investor Details -->
+  <div *ngIf="selectedInvestor" class="selected-investor">
+    <h3>Selected Investor</h3>
+    <p><strong>Name:</strong> {{ selectedInvestor.name }}</p>
+    <p><strong>Interest Rate:</strong> {{ selectedInvestor.interestRate }}%</p>
+    <p><strong>Amount:</strong> ETH{{ selectedInvestor.amount }}</p>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button (click)="saveSelection()">Save & Confirm</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoShakti - Decentralized Lending Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #1a1a2e, #16213e);
+    color: #fff;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #0f3460;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #31c48d; /* Green color for header */
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #31c48d; /* Green hover effect for navigation links */
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #16213e, #0f3460);
+    flex: 1;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #31c48d; /* Green color for heading */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.hero button {
+    background-color: #31c48d; /* Green button background */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero button:hover {
+    background-color: #23a86d; /* Darker green for button hover */
+    transform: scale(1.05);
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 20px;
+    justify-content: center;
+}
+
+.feature-card {
+    background-color: #0f3460;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card h3 {
+    color: #31c48d; /* Green color for feature card titles */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #0f3460;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #31c48d; /* Green color for footer links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CryptoShakti</h1>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#features">Features</a>
+            <a routerLink="/about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h2>Decentralized Banking Redefined</h2>
+        <p>Join CryptoShakti, the ultimate decentralized crowd-lending platform where your investments grow and financial needs are met securely and transparently.</p>
+        <button onclick="window.location.href='/sign-up-sign-in'">Get Started</button>
+    </section>
+
+    <section id="features" class="features">
+        <div class="feature-card">
+            <h3>Secure Investments</h3>
+            <p>Invest with confidence in tiered plans: Bronze, Gold, and Diamond. Enjoy guaranteed returns and peace of mind.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Easy Lending</h3>
+            <p>Borrow funds effortlessly with low-interest rates and transparent repayment schedules.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Blockchain Transparency</h3>
+            <p>Every transaction is secured and recorded on the blockchain, ensuring unmatched transparency.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Platform Rewards</h3>
+            <p>Earn extra rewards through our reserve fund initiatives and community contributions.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CryptoShakti. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

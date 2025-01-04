@@ -1,0 +1,29 @@
+.connect-wallet {
+    text-align: center;
+    padding: 40px;
+    background-color: #16213e;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.connect-wallet h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #31c48d;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #31c48d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #23a86d;
+}
